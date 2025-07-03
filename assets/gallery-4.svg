@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background Gradient (Night) -->
+  <defs>
+    <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1" />
+      <stop offset="100%" stop-color="#1A237E" />
+    </linearGradient>
+    <radialGradient id="light-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFEB3B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFEB3B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="600" height="400" fill="url(#sky-gradient)"/>
+  
+  <!-- Stars -->
+  <g fill="#FFFFFF">
+    <!-- Random stars with twinkling animation -->
+    <circle cx="50" cy="50" r="1.5" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="70" r="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.1;0.7" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="40" r="1.5" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="60" r="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="30" r="1.5" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="50" r="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.1;0.7" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="350" cy="40" r="1.5" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="60" r="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450" cy="30" r="1.5" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="50" r="1" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.1;0.7" dur="3.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="550" cy="40" r="1.5" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.6s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- More stars scattered around -->
+    <circle cx="75" cy="100" r="1" opacity="0.7" />
+    <circle cx="125" cy="120" r="1.5" opacity="0.8" />
+    <circle cx="175" cy="90" r="1" opacity="0.6" />
+    <circle cx="225" cy="110" r="1.5" opacity="0.9" />
+    <circle cx="275" cy="80" r="1" opacity="0.7" />
+    <circle cx="325" cy="100" r="1.5" opacity="0.8" />
+    <circle cx="375" cy="90" r="1" opacity="0.6" />
+    <circle cx="425" cy="110" r="1.5" opacity="0.9" />
+    <circle cx="475" cy="80" r="1" opacity="0.7" />
+    <circle cx="525" cy="100" r="1.5" opacity="0.8" />
+    <circle cx="575" cy="90" r="1" opacity="0.6" />
+  </g>
+  
+  <!-- Moon -->
+  <circle cx="500" cy="80" r="30" fill="#FAFAFA" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.85;0.9" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="485" cy="70" r="8" fill="#E0E0E0" opacity="0.8" />
+  <circle cx="510" cy="90" r="6" fill="#E0E0E0" opacity="0.8" />
+  <circle cx="495" cy="95" r="5" fill="#E0E0E0" opacity="0.8" />
+  
+  <!-- Mountains Background -->
+  <path d="M0,200 L100,150 L200,180 L300,140 L400,190 L500,150 L600,180 L600,400 L0,400 Z" fill="#1B5E20" opacity="0.5"/>
+  
+  <!-- Lake/Water -->
+  <path d="M0,250 L600,250 L600,400 L0,400 Z" fill="#0D47A1" opacity="0.7"/>
+  
+  <!-- Moon Reflection on Water -->
+  <ellipse cx="500" cy="320" rx="20" ry="50" fill="#FAFAFA" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="ry" values="50;45;50" dur="5s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Bamboo Forest Silhouette -->
+  <g fill="#000000" opacity="0.9">
+    <!-- Left Group -->
+    <rect x="50" y="200" width="5" height="200" rx="2" />
+    <rect x="60" y="210" width="5" height="190" rx="2" />
+    <rect x="70" y="205" width="5" height="195" rx="2" />
+    <rect x="80" y="215" width="5" height="185" rx="2" />
+    
+    <rect x="120" y="200" width="5" height="200" rx="2" />
+    <rect x="130" y="210" width="5" height="190" rx="2" />
+    <rect x="140" y="205" width="5" height="195" rx="2" />
+    
+    <rect x="180" y="200" width="5" height="200" rx="2" />
+    <rect x="190" y="210" width="5" height="190" rx="2" />
+    
+    <!-- Right Group -->
+    <rect x="410" y="200" width="5" height="200" rx="2" />
+    <rect x="420" y="210" width="5" height="190" rx="2" />
+    <rect x="430" y="205" width="5" height="195" rx="2" />
+    <rect x="440" y="215" width="5" height="185" rx="2" />
+    
+    <rect x="480" y="200" width="5" height="200" rx="2" />
+    <rect x="490" y="210" width="5" height="190" rx="2" />
+    <rect x="500" y="205" width="5" height="195" rx="2" />
+    
+    <rect x="540" y="200" width="5" height="200" rx="2" />
+    <rect x="550" y="210" width="5" height="190" rx="2" />
+  </g>
+  
+  <!-- Glamping Tents with Lights -->
+  <g>
+    <!-- Glamping Tent 1 (Left) -->
+    <path d="M150,300 L200,250 L250,300 Z" fill="#4A148C" stroke="#311B92" stroke-width="2" />
+    <rect x="170" y="300" width="60" height="30" rx="5" fill="#4A148C" stroke="#311B92" stroke-width="2" />
+    <path d="M180,300 L200,270 L220,300 Z" fill="#FFFFFF" opacity="0.3" />
+    <circle cx="200" cy="320" r="15" fill="url(#light-gradient)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Glamping Tent 2 (Right) -->
+    <path d="M350,300 L400,250 L450,300 Z" fill="#1A237E" stroke="#0D47A1" stroke-width="2" />
+    <rect x="370" y="300" width="60" height="30" rx="5" fill="#1A237E" stroke="#0D47A1" stroke-width="2" />
+    <path d="M380,300 L400,270 L420,300 Z" fill="#FFFFFF" opacity="0.3" />
+    <circle cx="400" cy="320" r="15" fill="url(#light-gradient)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- String Lights Between Tents -->
+  <path d="M250,280 C280,260 320,260 350,280" fill="none" stroke="#BDBDBD" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <circle cx="260" cy="278" r="3" fill="#FFEB3B" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="280" cy="272" r="3" fill="#FF5722" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="300" cy="270" r="3" fill="#4CAF50" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="320" cy="272" r="3" fill="#2196F3" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="340" cy="278" r="3" fill="#9C27B0" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Campfire -->
+  <g transform="translate(300, 350)">
+    <circle cx="0" cy="0" r="15" fill="#FF9800" opacity="0.7">
+      <animate attributeName="r" values="15;17;15" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="1s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Fire Glow -->
+    <circle cx="0" cy="0" r="30" fill="url(#light-gradient)" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.3;0.5" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="30;35;30" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Fire Flames -->
+    <path d="M0,0 Q5,-10 0,-15 Q-5,-10 0,0" fill="#FF5722">
+      <animate attributeName="d" values="M0,0 Q5,-10 0,-15 Q-5,-10 0,0;M0,0 Q3,-12 0,-18 Q-3,-12 0,0;M0,0 Q5,-10 0,-15 Q-5,-10 0,0" dur="0.8s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M-5,0 Q-10,-8 -7,-12 Q-4,-8 -5,0" fill="#FF5722">
+      <animate attributeName="d" values="M-5,0 Q-10,-8 -7,-12 Q-4,-8 -5,0;M-5,0 Q-8,-10 -5,-14 Q-2,-10 -5,0;M-5,0 Q-10,-8 -7,-12 Q-4,-8 -5,0" dur="0.7s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M5,0 Q10,-8 7,-12 Q4,-8 5,0" fill="#FF5722">
+      <animate attributeName="d" values="M5,0 Q10,-8 7,-12 Q4,-8 5,0;M5,0 Q8,-10 5,-14 Q2,-10 5,0;M5,0 Q10,-8 7,-12 Q4,-8 5,0" dur="0.9s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Logs -->
+    <rect x="-10" y="0" width="20" height="4" rx="2" fill="#795548" />
+    <rect x="-8" y="4" width="16" height="3" rx="1.5" fill="#5D4037" />
+  </g>
+  
+  <!-- People Silhouettes Around Campfire -->
+  <g fill="#000000">
+    <!-- Person 1 -->
+    <circle cx="270" cy="340" r="5" />
+    <rect x="268" y="345" width="4" height="15" rx="2" />
+    
+    <!-- Person 2 -->
+    <circle cx="330" cy="340" r="5" />
+    <rect x="328" y="345" width="4" height="15" rx="2" />
+    
+    <!-- Person 3 -->
+    <circle cx="300" cy="320" r="5" />
+    <rect x="298" y="325" width="4" height="15" rx="2" />
+  </g>
+  
+  <!-- Title Overlay -->
+  <rect x="150" y="30" width="300" height="50" rx="10" fill="rgba(0,0,0,0.5)"/>
+  <text x="300" y="65" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Night Glamping Experience</text>
+</svg>

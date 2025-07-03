@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <!-- Background Shape -->
+  <rect x="0" y="10" width="80" height="60" rx="10" fill="#4CAF50" opacity="0.2"/>
+  
+  <!-- Bamboo Stalks -->
+  <g fill="#4CAF50">
+    <!-- Stalk 1 -->
+    <rect x="15" y="15" width="4" height="50" rx="2"/>
+    <!-- Stalk 2 -->
+    <rect x="25" y="20" width="4" height="45" rx="2"/>
+    <!-- Stalk 3 -->
+    <rect x="35" y="18" width="4" height="47" rx="2"/>
+    <!-- Stalk 4 -->
+    <rect x="45" y="22" width="4" height="43" rx="2"/>
+    <!-- Stalk 5 -->
+    <rect x="55" y="17" width="4" height="48" rx="2"/>
+    
+    <!-- Bamboo Leaves -->
+    <path d="M12,15 Q5,5 15,8 Z" />
+    <path d="M17,18 Q25,5 30,12 Z" />
+    <path d="M38,20 Q45,8 50,15 Z" />
+    <path d="M52,19 Q65,10 60,22 Z" />
+    <path d="M32,15 Q40,5 45,15 Z" />
+    
+    <!-- Water Wave -->
+    <path d="M5,50 Q20,40 35,50 Q50,60 65,50 Q80,40 95,50" stroke="#2196F3" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="95" y="35" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#333333">TAMAN</text>
+  <text x="95" y="60" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#4CAF50">BAMBU AIR</text>
+</svg>
