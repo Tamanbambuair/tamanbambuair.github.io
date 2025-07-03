@@ -7,9 +7,9 @@ Taman Bambu Air - Main Stylesheet
 /* ===== VARIABLES ===== */
 :root {
     /* Colors - Enhanced palette */
-    --primary-color: #2E7D32;     /* Deeper Green */
-    --primary-light: #4CAF50;     /* Light Green */
-    --primary-dark: #1B5E20;      /* Dark Green */
+    --primary-color: #4CAF50;     /* Brighter Green */
+    --primary-light: #66BB6A;     /* Light Green */
+    --primary-dark: #388E3C;      /* Less Dark Green */
     --secondary-color: #1976D2;   /* Deeper Blue */
     --secondary-light: #42A5F5;   /* Light Blue */
     --accent-color: #FF9800;      /* Orange */
@@ -51,7 +51,7 @@ Taman Bambu Air - Main Stylesheet
     --transition-slow: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
     /* Gradients */
-    --primary-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    --primary-gradient: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
     --accent-gradient: linear-gradient(135deg, var(--accent-color) 0%, #FF5722 100%);
     --dark-gradient: linear-gradient(135deg, var(--dark-color) 0%, var(--dark-gray) 100%);
 }
@@ -210,13 +210,13 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px 0;
     z-index: 1000;
     transition: all var(--transition-normal);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .navbar.scrolled {
@@ -227,12 +227,12 @@ section {
 }
 
 [data-theme="dark"] .navbar {
-    background-color: rgba(18, 18, 18, 0.5);
+    background-color: rgba(30, 30, 30, 0.8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 [data-theme="dark"] .navbar.scrolled {
-    background-color: rgba(18, 18, 18, 0.95);
+    background-color: rgba(30, 30, 30, 0.95);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -268,10 +268,11 @@ section {
 
 .nav-link {
     position: relative;
-    font-weight: 500;
+    font-weight: 600;
     padding: 8px 0;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     letter-spacing: 0.3px;
+    color: var(--dark-color);
     transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -281,10 +282,11 @@ section {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background: var(--primary-gradient);
     transition: width var(--transition-fast);
-    border-radius: 2px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
 }
 
 .nav-link:hover {
@@ -299,7 +301,16 @@ section {
 
 .nav-link.active {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--light-color);
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: var(--primary-light);
 }
 
 .nav-toggle {
@@ -312,9 +323,13 @@ section {
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     margin: 2px 0;
     transition: var(--transition-fast);
+}
+
+[data-theme="dark"] .nav-toggle span {
+    background-color: var(--primary-light);
 }
 
 .dark-mode-toggle {
@@ -324,18 +339,33 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--light-color);
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 2px solid rgba(76, 175, 80, 0.2);
     cursor: pointer;
     margin-left: 15px;
-    transition: background-color var(--transition-fast);
+    transition: all var(--transition-fast);
+    color: var(--primary-color);
 }
 
 .dark-mode-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(76, 175, 80, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
 }
 
 .dark-mode-toggle .fa-sun {
     display: none;
+}
+
+[data-theme="dark"] .dark-mode-toggle {
+    background-color: rgba(102, 187, 106, 0.2);
+    border: 2px solid rgba(102, 187, 106, 0.3);
+    color: var(--primary-light);
+}
+
+[data-theme="dark"] .dark-mode-toggle:hover {
+    background-color: rgba(102, 187, 106, 0.3);
+    box-shadow: 0 2px 8px rgba(102, 187, 106, 0.4);
 }
 
 [data-theme="dark"] .dark-mode-toggle .fa-moon {
@@ -344,7 +374,7 @@ section {
 
 [data-theme="dark"] .dark-mode-toggle .fa-sun {
     display: block;
-    color: var(--warning-color);
+    color: var(--primary-light);
 }
 
 /* ===== HERO SECTION ===== */
